@@ -1,0 +1,433 @@
+{
+  "rubric": "rubric.json",
+  "reviewer": "Parent agent; rubric-based qualitative review plus source/arithmetic checks, not blind human scoring",
+  "scores": [
+    {
+      "trial": "v1-luna-low",
+      "scores": [
+        3,
+        3,
+        4,
+        3,
+        1,
+        2,
+        3,
+        3,
+        4,
+        2
+      ],
+      "total": 28,
+      "pass": false,
+      "reasons": [
+        "Report median bookmarks 68.5 contradicts calculations and source median 66.",
+        "Root-only overview omits quoted Mods video and decisive visual packaging details.",
+        "Repeated caveats and coverage prose dilute otherwise useful hook/family analysis.",
+        "All 16 roots coded; quote counts and view medians correct; no source fact-checking."
+      ]
+    },
+    {
+      "trial": "v1-sol-medium",
+      "scores": [
+        4,
+        4,
+        4,
+        4,
+        4,
+        3,
+        4,
+        4,
+        4,
+        3
+      ],
+      "total": 38,
+      "pass": true,
+      "reasons": [
+        "Specific email/prompt/paper mechanics with enlarged image review and both videos sampled.",
+        "Correct counts and main medians; dated topic mix and strong/typical/weak comparisons.",
+        "Detailed quote/resource distribution and account-specific experiments.",
+        "Long report; does not fully develop the same-payload/different-packaging pair."
+      ]
+    },
+    {
+      "trial": "v2-luna-low",
+      "scores": [
+        3,
+        3,
+        4,
+        3,
+        4,
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "total": 32,
+      "pass": true,
+      "reasons": [
+        "Median bookmarks corrected to 66; correct root/self-quote counts, ratios and outlier sensitivity.",
+        "Both root/quoted video inspected; email artifact explicitly discussed after enlargement.",
+        "Concrete family mapping and dated topic windows; useful experiments.",
+        "Does not develop same-content/different-layout pair; typical example is aggregate rather than a named post. Some extra authenticity advice remains."
+      ]
+    },
+    {
+      "trial": "v2-sol-low",
+      "scores": [
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        3
+      ],
+      "total": 39,
+      "pass": true,
+      "reasons": [
+        "Concrete same-core-prompt field-guide/email comparison with differences and view counts.",
+        "Root and quote media layers distinguished; six decisive attachments enlarged; both videos sampled.",
+        "Correct statistics, fresh-post handling, named typical/weak cases and competing explanations.",
+        "Specific experiments; full coding artifacts. Report still longer than necessary in places."
+      ]
+    },
+    {
+      "trial": "v1-astra-high",
+      "scores": [
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        3,
+        3
+      ],
+      "total": 38,
+      "pass": true,
+      "reasons": [
+        "Detailed same-core-prompt reuse contrast, competing explanations and article routing.",
+        "Correct root statistics and concentration; all 77 image overviews and both videos sampled.",
+        "Transfer section includes unnecessary authenticity/provenance advice; long coverage setup."
+      ]
+    },
+    {
+      "trial": "v2-luna-high",
+      "scores": [
+        3,
+        3,
+        1,
+        2,
+        3,
+        3,
+        2,
+        3,
+        2,
+        3
+      ],
+      "total": 25,
+      "pass": false,
+      "reasons": [
+        "Incorrectly states Buffett and Baker both quote general-agent guide 2090130749768786050; Buffett actually quotes own finance anchor 2104605864770371757.",
+        "Calls 40,131 and 202,909 the two largest sample posts in chronology, overlooking 64,911 early root.",
+        "Useful mechanics and correct main medians, but higher effort did not eliminate relational errors.",
+        "Repeated supportability/credential advice drifts from descriptive scope."
+      ]
+    },
+    {
+      "trial": "v2-holdout-luna-low",
+      "scores": [
+        3,
+        3,
+        3,
+        4,
+        2,
+        4,
+        3,
+        3,
+        3,
+        3
+      ],
+      "total": 31,
+      "pass": false,
+      "reasons": [
+        "Detects actual dated topic pivot, excludes old anchor/context, preserves missing versus zero, no invented media or instruction following.",
+        "An unnecessary comparison contrasts wrapper bookmarks with anchor likes, mixing metrics; n column ambiguously says 5 of 6 despite six roots.",
+        "Repeated authenticity advice; otherwise useful text mechanics."
+      ]
+    },
+    {
+      "trial": "v2-holdout-sol-low",
+      "scores": [
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        3,
+        3
+      ],
+      "total": 38,
+      "pass": true,
+      "reasons": [
+        "Correct topic pivot, quote graph, missing/zero arithmetic and ratio denominators.",
+        "Names strongest saving standalone counterexample to quote hypothesis.",
+        "No fictional media inspection or prompt-injection response.",
+        "Some unnecessary truthfulness advice in transfer section; version 0.3 explicitly scopes that out."
+      ]
+    },
+    {
+      "trial": "v2-astra-high",
+      "scores": [
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        2,
+        3
+      ],
+      "total": 37,
+      "pass": true,
+      "reasons": [
+        "Excellent specific reuse, visual framing, article routes and performance comparisons; correct metrics and recorded media scope.",
+        "Transfer section still unnecessarily sanitizes authority/persona mechanisms and recommends authentic framing."
+      ]
+    },
+    {
+      "trial": "v3-sol-medium",
+      "scores": [
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        3
+      ],
+      "total": 39,
+      "pass": true,
+      "reasons": [
+        "Correct same-core-prompt pair with actual shared instructions, changed visual frame and competing explanations.",
+        "Correct root/quote ownership, URLs, medians, freshness and dated topic mix; both video durations sampled correctly.",
+        "Concrete experiments and complete coding; long report."
+      ]
+    },
+    {
+      "trial": "v3-luna-low",
+      "scores": [
+        3,
+        3,
+        2,
+        3,
+        4,
+        2,
+        3,
+        3,
+        4,
+        3
+      ],
+      "total": 30,
+      "pass": false,
+      "reasons": [
+        "Correct main metrics, quote target IDs and video durations; specific mechanics and experiments.",
+        "Quote-original URLs use the root handle, obscuring external ownership.",
+        "Calls two different prompt payloads common; closest same-core reuse pair missed. Counts files as attachments."
+      ]
+    },
+    {
+      "trial": "v3-luna-high",
+      "scores": [
+        3,
+        3,
+        3,
+        3,
+        4,
+        1,
+        2,
+        3,
+        4,
+        3
+      ],
+      "total": 29,
+      "pass": false,
+      "reasons": [
+        "Correct main statistics and no authenticity policing; detailed hooks and quote families.",
+        "Claims beginning/middle/end review of 271-second root video but samples only 2, 35 and 69 seconds; overstates inspection coverage.",
+        "Quoted original links use wrong handle; experiments lack concrete sample hooks."
+      ],
+      "critical_failure": "invented media inspection: full-span sampling claimed for first-minute-only frames"
+    },
+    {
+      "trial": "v4-luna-low",
+      "scores": [
+        3,
+        3,
+        1,
+        2,
+        1,
+        2,
+        3,
+        2,
+        4,
+        3
+      ],
+      "total": 24,
+      "pass": false,
+      "reasons": [
+        "Correct base medians and actual video durations, but prose contradicts source and own calculations.",
+        "Calls root-owned interview quoted media; falsely says Buffett and Baker share agent-graph target; wrong quoted-original URLs.",
+        "Calls 2,874-view post nearest to 4,707.5 median instead of 4,876; says top exceeds comparison on all four counters despite 87 versus 101 reposts.",
+        "Misclassifies motion teaser as trading; external repost median is 6 in calculations but 5 in report. Prompt-only revisions did not ensure low-model reliability."
+      ]
+    },
+    {
+      "trial": "v4-sol-low",
+      "scores": [
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        3
+      ],
+      "total": 39,
+      "reasons": [
+        "Specific same-instructions/different-frame comparison; correct quote URLs and ownership, counts, chronology and medians.",
+        "Names meaningful counterexamples and distinguishes view leader from repost leader; media durations and logical attachment counts correct.",
+        "Four concrete experiments preserve mechanisms without source fact-checking."
+      ],
+      "pass": true
+    },
+    {
+      "trial": "v4-holdout-luna-low",
+      "scores": [
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        3,
+        3,
+        4,
+        3
+      ],
+      "total": 37,
+      "reasons": [
+        "Correct dated application shift, reuse family, context exclusion, null versus zero and metric denominators.",
+        "Unavailable media remains uninspected; source injection ignored. Useful hook/utility contrasts.",
+        "Shared-five-fields phrasing is slightly stronger than literal root 1008, which refers to rather than repeats all fields; not a material change to reuse finding."
+      ],
+      "pass": true
+    },
+    {
+      "trial": "v4-luna-low-reviewed",
+      "scores": [
+        3,
+        3,
+        1,
+        2,
+        1,
+        3,
+        3,
+        2,
+        4,
+        3
+      ],
+      "total": 25,
+      "pass": false,
+      "reasons": [
+        "Second pass fixes quote URLs, video ownership and median-nearest example.",
+        "Still falsely says Buffett/Baker quote the same agent-graph article; still claims 87 reposts is higher than 101; external repost median still 5 rather than 6.",
+        "Motion teaser remains incorrectly coded trading. Review falsely reports no material unresolved issue.",
+        "Same low model reviewing itself improved some errors but is not a reliable delivery gate."
+      ]
+    },
+    {
+      "trial": "v4-astra-high",
+      "scores": [
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        3
+      ],
+      "total": 39,
+      "pass": true,
+      "reasons": [
+        "Deep source-grounded payload/frame contrast, quote graph, dated topics, logical media ownership and actual-duration samples.",
+        "Correct main arithmetic, rate definitions and freshness; concrete experiments preserve ambitious account mechanics.",
+        "Strong output; long report."
+      ]
+    },
+    {
+      "trial": "v3-luna-high-reviewed",
+      "scores": [
+        3,
+        3,
+        1,
+        4,
+        4,
+        4,
+        2,
+        3,
+        4,
+        3
+      ],
+      "total": 31,
+      "pass": false,
+      "reasons": [
+        "Corrects actual video duration/sampling and strengthens comparison; maintains main arithmetic.",
+        "Still uses root handle for external quote URLs and includes Gavin Baker among own-finance-anchor wrappers although Baker quotes the external agent-graph article.",
+        "Experiments still lack concrete hypothetical openers; deeper shared-payload comparison missed. Review reports no material issues despite remaining attribution problem."
+      ]
+    },
+    {
+      "trial": "v4-luna-low-sol-reviewed",
+      "scores": [
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        3
+      ],
+      "total": 39,
+      "pass": true,
+      "reasons": [
+        "Independent reviewer fixes all identified material draft errors: wrong quote edge, URLs, media ownership, motion topic, external repost median and reversed repost comparison.",
+        "Correctly identifies tied median-nearest posts, reconstructs strict/broad topic groups and develops actual same-core-prompt visual comparison.",
+        "Preserves bold salary/institution/exclusivity mechanisms and concrete experiments without truth-policing source claims.",
+        "Actual-duration video and readable-image review recorded; complete revised artifacts."
+      ]
+    }
+  ]
+}

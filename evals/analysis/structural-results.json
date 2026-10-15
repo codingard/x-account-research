@@ -1,0 +1,135 @@
+[
+  {
+    "trial": "v1-astra-high",
+    "structural_issues": [],
+    "coded_roots": 16,
+    "expected_roots": 16,
+    "quality_scored": false
+  },
+  {
+    "trial": "v1-luna-low",
+    "structural_issues": [],
+    "coded_roots": 16,
+    "expected_roots": 16,
+    "quality_scored": false
+  },
+  {
+    "trial": "v1-sol-medium",
+    "structural_issues": [],
+    "coded_roots": 16,
+    "expected_roots": 16,
+    "quality_scored": false
+  },
+  {
+    "trial": "v2-astra-high",
+    "structural_issues": [],
+    "coded_roots": 16,
+    "expected_roots": 16,
+    "quality_scored": false
+  },
+  {
+    "trial": "v2-holdout-luna-low",
+    "structural_issues": [],
+    "coded_roots": 12,
+    "expected_roots": 12,
+    "quality_scored": false
+  },
+  {
+    "trial": "v2-holdout-sol-low",
+    "structural_issues": [],
+    "coded_roots": 12,
+    "expected_roots": 12,
+    "quality_scored": false
+  },
+  {
+    "trial": "v2-luna-high",
+    "structural_issues": [],
+    "coded_roots": 16,
+    "expected_roots": 16,
+    "quality_scored": false
+  },
+  {
+    "trial": "v2-luna-low",
+    "structural_issues": [],
+    "coded_roots": 16,
+    "expected_roots": 16,
+    "quality_scored": false
+  },
+  {
+    "trial": "v2-sol-low",
+    "structural_issues": [],
+    "coded_roots": 16,
+    "expected_roots": 16,
+    "quality_scored": false
+  },
+  {
+    "trial": "v3-luna-high",
+    "structural_issues": [],
+    "coded_roots": 16,
+    "expected_roots": 16,
+    "quality_scored": false
+  },
+  {
+    "trial": "v3-luna-high-reviewed",
+    "structural_issues": [],
+    "coded_roots": 16,
+    "expected_roots": 16,
+    "quality_scored": false
+  },
+  {
+    "trial": "v3-luna-low",
+    "structural_issues": [],
+    "coded_roots": 16,
+    "expected_roots": 16,
+    "quality_scored": false
+  },
+  {
+    "trial": "v3-sol-medium",
+    "structural_issues": [],
+    "coded_roots": 16,
+    "expected_roots": 16,
+    "quality_scored": false
+  },
+  {
+    "trial": "v4-astra-high",
+    "structural_issues": [],
+    "coded_roots": 16,
+    "expected_roots": 16,
+    "quality_scored": false
+  },
+  {
+    "trial": "v4-holdout-luna-low",
+    "structural_issues": [],
+    "coded_roots": 12,
+    "expected_roots": 12,
+    "quality_scored": false
+  },
+  {
+    "trial": "v4-luna-low",
+    "structural_issues": [],
+    "coded_roots": 16,
+    "expected_roots": 16,
+    "quality_scored": false
+  },
+  {
+    "trial": "v4-luna-low-reviewed",
+    "structural_issues": [],
+    "coded_roots": 16,
+    "expected_roots": 16,
+    "quality_scored": false
+  },
+  {
+    "trial": "v4-luna-low-sol-reviewed",
+    "structural_issues": [],
+    "coded_roots": 16,
+    "expected_roots": 16,
+    "quality_scored": false
+  },
+  {
+    "trial": "v4-sol-low",
+    "structural_issues": [],
+    "coded_roots": 16,
+    "expected_roots": 16,
+    "quality_scored": false
+  }
+]

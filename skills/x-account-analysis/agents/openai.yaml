@@ -1,0 +1,4 @@
+interface:
+  display_name: "X Account Analysis"
+  short_description: "Decode editorial mechanics and observed performance"
+  default_prompt: "Use $x-account-analysis to reverse-engineer the editorial strategy of this downloaded X account."

@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "X Account Research — local",
+  "version": "0.3.1",
+  "description": "Collect a profile through your existing X browser session and export a local analysis package.",
+  "permissions": ["storage", "downloads", "alarms"],
+  "host_permissions": ["https://x.com/*"],
+  "background": {"service_worker": "background.js"},
+  "action": {"default_popup": "popup.html", "default_title": "X Account Research"},
+  "content_scripts": [
+    {"matches": ["https://x.com/*"], "js": ["core.js", "bridge.js"], "run_at": "document_start", "world": "MAIN"},
+    {"matches": ["https://x.com/*"], "js": ["page.js"], "run_at": "document_start"}
+  ]
+}

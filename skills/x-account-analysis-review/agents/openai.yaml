@@ -1,0 +1,4 @@
+interface:
+  display_name: "X Account Analysis Review"
+  short_description: "Improve editorial insight and reconcile dataset evidence"
+  default_prompt: "Use $x-account-analysis-review to review this account analysis against its downloaded dataset."

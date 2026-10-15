@@ -1,0 +1,11 @@
+__pycache__/
+*.py[cod]
+runs/
+.tmp/
+.DS_Store
+.env
+.env.*
+!.env.example
+.venv/
+node_modules/
+repository-path.txt

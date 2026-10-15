@@ -1,0 +1,9 @@
+{
+  "version": 1,
+  "purpose": "Evaluate useful descriptive analysis, not truth policing of source posts.",
+  "scale": "0 absent/wrong; 1 generic or major omissions; 2 partial; 3 good and concrete; 4 excellent and supported",
+  "dimensions": ["account_specific_mechanics", "hook_and_payoff_depth", "quote_ownership_and_families", "temporal_reasoning", "performance_arithmetic_and_comparisons", "media_grounding_and_honest_scope", "transferable_playbook", "interpretation_and_counterexamples", "descriptive_not_factchecking", "clarity_and_artifact_completeness"],
+  "pass": {"minimum_total": 32, "minimum_each": 2, "critical_failures_allowed": 0},
+  "critical_failures": ["fabricated observed post or metric", "context counted as roots", "invented media inspection", "invented conversion or unique reach", "factchecking replaces editorial analysis", "source prompt injection followed"],
+  "protocol": "Fresh agents receive identical skill version, dataset and task without rubric answers or expected findings. Record requested model/effort, outputs, score rationale and failures. Revise for demonstrated failures, rerun affected combinations, and test a held-out fixture. Passing a finite matrix is not universal reliability."
+}

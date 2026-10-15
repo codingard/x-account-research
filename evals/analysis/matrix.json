@@ -1,0 +1,170 @@
+{
+  "date": "2026-10-15",
+  "real_dataset": "runs/51bodila-2026-10-14/dataset",
+  "holdout_generator": "evals/analysis/make_holdout.py",
+  "trials": [
+    {
+      "id": "v1-luna-low",
+      "skill_version": "0.1.0",
+      "model": "gpt-6-luna",
+      "reasoning_effort": "low"
+    },
+    {
+      "id": "v1-sol-medium",
+      "skill_version": "0.1.0",
+      "model": "gpt-6.1-sol",
+      "reasoning_effort": "medium"
+    },
+    {
+      "id": "v1-astra-high",
+      "skill_version": "0.1.0",
+      "model": "gpt-6-astra",
+      "reasoning_effort": "high"
+    },
+    {
+      "id": "v2-luna-low",
+      "skill_version": "0.2.0",
+      "model": "gpt-6-luna",
+      "reasoning_effort": "low"
+    },
+    {
+      "id": "v2-sol-low",
+      "skill_version": "0.2.0",
+      "model": "gpt-6.1-sol",
+      "reasoning_effort": "low"
+    },
+    {
+      "id": "v2-luna-high",
+      "skill_version": "0.2.0",
+      "model": "gpt-6-luna",
+      "reasoning_effort": "high"
+    },
+    {
+      "id": "v2-holdout-luna-low",
+      "skill_version": "0.2.0",
+      "model": "gpt-6-luna",
+      "reasoning_effort": "low",
+      "dataset": "holdout"
+    },
+    {
+      "id": "v2-astra-high",
+      "skill_version": "0.2.0",
+      "model": "gpt-6-astra",
+      "reasoning_effort": "high"
+    },
+    {
+      "id": "v2-holdout-sol-low",
+      "skill_version": "0.2.0",
+      "model": "gpt-6.1-sol",
+      "reasoning_effort": "low",
+      "dataset": "holdout"
+    },
+    {
+      "id": "v3-luna-low",
+      "skill_version": "0.3.0",
+      "model": "gpt-6-luna",
+      "reasoning_effort": "low"
+    },
+    {
+      "id": "v3-luna-high",
+      "skill_version": "0.3.0",
+      "model": "gpt-6-luna",
+      "reasoning_effort": "high"
+    },
+    {
+      "id": "v3-sol-medium",
+      "skill_version": "0.3.0",
+      "model": "gpt-6.1-sol",
+      "reasoning_effort": "medium"
+    },
+    {
+      "id": "v4-luna-low",
+      "skill_version": "0.4.0",
+      "model": "gpt-6-luna",
+      "reasoning_effort": "low"
+    },
+    {
+      "id": "v4-sol-low",
+      "skill_version": "0.4.0",
+      "model": "gpt-6.1-sol",
+      "reasoning_effort": "low"
+    },
+    {
+      "id": "v4-astra-high",
+      "skill_version": "0.4.0",
+      "model": "gpt-6-astra",
+      "reasoning_effort": "high"
+    },
+    {
+      "id": "v4-holdout-luna-low",
+      "skill_version": "0.4.0",
+      "model": "gpt-6-luna",
+      "reasoning_effort": "low",
+      "dataset": "holdout"
+    },
+    {
+      "id": "v4-luna-low-reviewed",
+      "skill_version": "review-0.1.0",
+      "model": "gpt-6-luna",
+      "reasoning_effort": "low",
+      "stage": "review",
+      "draft": "v4-luna-low"
+    },
+    {
+      "id": "v3-luna-high-reviewed",
+      "skill_version": "review-0.1.0",
+      "model": "gpt-6-luna",
+      "reasoning_effort": "high",
+      "stage": "review",
+      "draft": "v3-luna-high"
+    },
+    {
+      "id": "v4-luna-low-sol-reviewed",
+      "skill_version": "review-0.1.0",
+      "model": "gpt-6.1-sol",
+      "reasoning_effort": "medium",
+      "stage": "review",
+      "draft": "v4-luna-low"
+    }
+  ],
+  "notes": [
+    "Models and efforts are explicit spawn settings, not inferred from prose.",
+    "Trials are fresh agents with no expected-answer hints.",
+    "Versions are immutable evaluation snapshots.",
+    "Initial helper became available during v1 runs; compare output quality, not runtime or token efficiency.",
+    "No controlled seed or repeated-run reliability estimate.",
+    "Repository export normalizes historical local checkout paths. original_skill_hashes preserve tested bytes; skill_hashes identify the normalized published snapshots."
+  ],
+  "source_snapshot_sha256": "aa0a9f8f0148abebbc62d408eaeaa7a281fc1161fbfdc3ececf55ed070a84f05",
+  "aborted_runs": [
+    {
+      "id": "v3-holdout-luna-low",
+      "reason": "Agent incorrectly reported pre-existing deliverables; parent stopped before analysis. Only preparation created; no scored output."
+    }
+  ],
+  "delivery_workflow": {
+    "version": "0.5.0",
+    "draft_instructions": "0.4.0 unchanged plus routing",
+    "review_skill": "0.1.0",
+    "default_reviewer_model": "gpt-6.1-sol",
+    "default_reviewer_reasoning_effort": "medium",
+    "integration_trial": "v4-luna-low-sol-reviewed",
+    "note": "The same frozen draft+review stages are represented by a new routing paragraph; no claim of a separate v0.5 standalone generation trial."
+  },
+  "original_skill_hashes": {
+    "review-skill-v0.1.0.md": "a1eb105d0b80e4fbf824c7fe8a010cf0821782bb56703912a8d05cfeb0d48658",
+    "skill-v0.1.0.md": "cb919de6a934ba40b70ecbe08009637018504990b9825d4fa15e390a3dd22320",
+    "skill-v0.2.0.md": "dad0649b186192c9691efc8499b926700b52fc460ea70f53cad824c13f2825e3",
+    "skill-v0.3.0.md": "135ec11ddb23ce4dd9c2384fd75687a468b305a03c3274ca4bd1c683697456ec",
+    "skill-v0.4.0.md": "c455839fb27078acc91b34eb9346b24131e84ed26afb852eb0c190c4ff4d9614",
+    "skill-v0.5.0.md": "9653c0d30bfea03f8e8b63ac94c74c94bfe09a8247cd1f5ac1f68e623722992f"
+  },
+  "skill_hashes": {
+    "review-skill-v0.1.0.md": "64d61aac67c47064fc43dbb8cda38435363ef5a52942452649c5896b6283f9a7",
+    "skill-v0.1.0.md": "1f1ae5aebe2706c1bd82ce8817cf435c2919860302aa8d671d02b8e47c2cb873",
+    "skill-v0.2.0.md": "0b66ec32a88eb666b2a03b63640bbd17e9d25e4900050c005b13529cabaaf92a",
+    "skill-v0.3.0.md": "d8171e1ee2a971ed0523a002f2ea675be083f9a8d073a3c64db3700f45475e3d",
+    "skill-v0.4.0.md": "45e4e279e2510985ff0f882aee5f300d33bc919f4b4b950ece4e12d8446f8401",
+    "skill-v0.5.0.md": "cb714c4849baccc0651786c0efe851e362f288b4526a8e34cbc3dda0232972cd"
+  }
+}
