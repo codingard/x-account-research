@@ -10,25 +10,28 @@ would conflict with the owner's requirement that collection happen through the
 browser they already use. Its conceptual output (normalized posts and context)
 is retained, but it is not a dependency.
 
-## Start here: instructions for an agent
+## Start here: instructions for any agent
 
 Treat this README as the end-to-end entrypoint. The skills handle individual
 stages; this section connects them. Read [AGENTS.md](AGENTS.md) and
 [DATASET.md](DATASET.md), then open only the skill needed for the current stage.
 All commands below run from the repository root.
+See [AGENT_WORKFLOW.md](AGENT_WORKFLOW.md) for provider-neutral prompts, capability
+fallbacks and handoffs between sessions. No model API or vendor SDK is required.
 
 ### Requirements and setup
 
 - An existing signed-in Chromium-compatible browser/profile, selected by the user.
 - An agent with supported browser or desktop UI control and local file access.
+  Without UI control, the user can operate the extension and supply its export.
   The extension does not provide a background agent API or log in on its own.
 - Python 3.10+ for the standard-library dataset/preparation scripts.
 - Node.js 18+ to run extension tests. No npm installation is required.
 - For media analysis: image viewing plus FFmpeg/ffprobe or equivalent local video
   tools. If unavailable, record the inspection limitation instead of inventing it.
-- Independent agents are needed for the tested two-stage analysis route. The
-  recorded reviewer is `gpt-6.1-sol` at `medium`; if unavailable, disclose the
-  alternative rather than claiming the same tested configuration.
+- Prefer an independent reviewer using any capable model/provider. A separate
+  session can replace subagents. A self-review fallback is allowed and must be
+  labeled; historical trial settings are not requirements.
 
 Clone this repository into a persistent location (private-repository access is required):
 
@@ -37,18 +40,25 @@ git clone https://github.com/codingard/x-account-research.git
 cd x-account-research
 ```
 
-For Codex skill discovery run:
+No skill installation is required: an agent can read `skills/*/SKILL.md`
+directly, or a chat can receive those instructions and the dataset as attachments.
+For a client that discovers SKILL.md folders:
 
 ```sh
-python3 install_skills.py
+python3 install_skills.py --destination /absolute/path/to/your/client/skills
 ```
 
-This installs the three skills into `${CODEX_HOME:-~/.codex}/skills` and records
-this checkout's absolute path in each installed skill. Existing skills are not
-replaced by default. Inspect them before using `--update`. A custom destination
-is supported with `--destination /absolute/path/to/skills`. After moving the
-checkout, update those pointers by rerunning the installer with `--update`.
-Agents can also read `skills/*/SKILL.md` directly without installing anything.
+This copies portable Markdown protocols and records this checkout's path. It
+does not configure the client's tools or model. For the optional Codex adapter:
+
+```sh
+python3 install_skills.py --codex
+```
+
+Only this adapter includes `agents/openai.yaml` and defaults to
+`${CODEX_HOME:-~/.codex}/skills`. Existing skills are not replaced by default;
+inspect them before using `--update`. After moving the checkout, rerun the
+installer with `--update` to refresh its location pointers.
 
 Load `extension/` as an unpacked extension in the selected browser profile using
 the instructions below. Respect the browser tool's installation approval rules.
@@ -91,7 +101,9 @@ the controls into English; previously installed 0.3.0 copies may have Russian la
    exclusivity and ambitious promises as mechanisms without moralizing.
 6. **Revise independently.** The analysis skill delegates
    [x-account-analysis-review](skills/x-account-analysis-review/SKILL.md) to a
-   fresh reviewer. Supply the original dataset, draft directory and a new
+   fresh reviewer using the selected model/provider, or hands off to another
+   session. Label self-review if no independent reviewer is available. Supply the
+   original dataset, draft directory and a new
    `runs/my-account/final/` directory. Preserve the draft. The reviewer corrects
    our dataset mistakes and strengthens interpretation, not the author's claims.
 7. **Deliver.** Link the dataset and final report, state date scope, root count,
@@ -247,8 +259,8 @@ resources, changes themes and performs in the observed sample. It does not audit
 the truth of source claims. See skills/x-account-analysis/SKILL.md. Outputs are
 report.md, post-coding.jsonl and calculations.json, in English by default.
 The default delivery route adds an independent revision with
-skills/x-account-analysis-review/SKILL.md on gpt-6.1-sol / medium. The initial
-analyst may use another model. Keep draft and revised outputs separate; the review
+skills/x-account-analysis-review/SKILL.md using a capable model selected by the
+user or runtime. No particular model or provider is mandatory. Keep draft and revised outputs separate; the review
 also produces review.json. This stage checks our analysis against the dataset,
 not whether the source author tells the truth. See evals/analysis/RESULTS.md for
 actual model limitations and failed trials.

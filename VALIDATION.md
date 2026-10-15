@@ -115,3 +115,12 @@ This task did not create, move or delete it. App tests pass independently.
 - Private source repository: https://github.com/codingard/x-account-research .
   Real runs and media are excluded. Public-facing source exports may normalize
   local paths in historical prompts; original evaluation hashes stay recorded.
+
+## Provider-neutral workflow — 2026-10-15
+
+- Analysis 0.6.0 and review 0.2.0 remove mandatory provider/model routing.
+- Added direct Markdown prompts, session handoffs and capability fallbacks.
+- Installer now requires an explicit destination or the optional --codex adapter;
+  generic installations omit OpenAI UI metadata.
+- Historical model trials remain unchanged. These portability changes do not
+  establish cross-provider quality or a live integration with another client.

@@ -2,9 +2,9 @@
 
 Evaluated on 2026-10-15: 19 completed generation/review trials across three models and low, medium and high efforts; one aborted preparation-only run is recorded separately. Scores are parent-agent judgments against the published rubric, with source and arithmetic checks, not a blind human benchmark. Pass: at least 32/40, every dimension at least 2, no critical failure.
 
-## Delivery decision
+## Historical delivery decision (superseded by portable routing)
 
-Install x-account-analysis 0.5.0 and x-account-analysis-review 0.1.0. Default: the caller’s model drafts, then a fresh gpt-6.1-sol / medium agent revises against the original dataset. Preserve both outputs. A single prompt did not make Luna low/high consistently reliable, and same-model reviews retained material errors. Do not claim model-independent single-pass excellence.
+The evaluated recommendation was to install x-account-analysis 0.5.0 and x-account-analysis-review 0.1.0. Default: the caller’s model drafts, then a fresh gpt-6.1-sol / medium agent revises against the original dataset. Preserve both outputs. A single prompt did not make Luna low/high consistently reliable, and same-model reviews retained material errors. Do not claim model-independent single-pass excellence.
 
 The integrated route was exercised with the failed v4-luna-low draft and a fresh Sol/medium reviewer. The result passed at 39/40, repaired material mistakes and recovered a deeper shared-payload comparison. Version 0.5 retains the tested 0.4 drafting text and adds this routing rule; it is not a separately measured generation trial.
 
@@ -55,3 +55,11 @@ All 19 completed packages pass structural root-coverage checks. Structural compl
 See matrix.json for explicit settings and hashes, scores.json for reasons, structural-results.json for schema checks, and PROTOCOL.md for procedure. Real outputs remain in ignored runs/analysis-eval-2026-10-15/; failed reports are unchanged.
 
 This is one real account and one synthetic holdout, with no controlled seeds, repeated-trial probability estimate or latency comparison. The final Sol review route has one full failed-draft integration test, supported by consistently strong separate Sol low/medium analyses. Its broader cross-account robustness remains unmeasured. No finite matrix establishes flawless output on arbitrary models, efforts or accounts. No source-author claims were independently fact-checked.
+
+## Current portable workflow
+
+Analysis 0.6.0 and review 0.2.0 allow any provider and reviewer configuration,
+including session handoffs and labeled self-review. The historical recommendation
+above is evaluation evidence, not a mandatory dependency. No new cross-provider
+quality trials are claimed for this packaging change. See AGENT_WORKFLOW.md at
+the repository root.

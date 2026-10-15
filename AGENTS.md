@@ -38,6 +38,7 @@ English. Preserve original source text and historical exports in their original
 language. Test skill changes with fresh agents across explicitly recorded models
 and reasoning levels when requested; never claim universality from a finite test.
 
-The analysis skill delegates a fresh review by default before final delivery.
-Use the model/effort named in that skill when available; do not represent a
-same-model self-review as the tested independent reviewer route.
+The workflow is provider-neutral. Prefer a fresh reviewer selected by the user
+or available runtime. A second session can replace subagents; a separate
+self-review is the fallback and must be labeled accurately. Historical model
+evaluations are evidence, not mandatory model/provider dependencies.
